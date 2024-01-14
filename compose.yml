@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  dino:
+    build:
+      dockerfile: ./Dockerfile
+      context: .
+    image: brunocmorais/dino
+    container_name: dino
+    ports:
+      - 80:80
